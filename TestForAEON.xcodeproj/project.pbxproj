@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		67961CC3272CB86900A08F3B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67961CC2272CB86900A08F3B /* AppDelegate.swift */; };
 		67961CC5272CB86900A08F3B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67961CC4272CB86900A08F3B /* SceneDelegate.swift */; };
-		67961CC7272CB86900A08F3B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67961CC6272CB86900A08F3B /* ViewController.swift */; };
+		67961CC7272CB86900A08F3B /* AuthorizationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67961CC6272CB86900A08F3B /* AuthorizationController.swift */; };
 		67961CCA272CB86900A08F3B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67961CC8272CB86900A08F3B /* Main.storyboard */; };
 		67961CCC272CB86A00A08F3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67961CCB272CB86A00A08F3B /* Assets.xcassets */; };
 		67961CCF272CB86A00A08F3B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67961CCD272CB86A00A08F3B /* LaunchScreen.storyboard */; };
+		67961CD7272CDF1A00A08F3B /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67961CD6272CDF1A00A08F3B /* Models.swift */; };
+		67961CD9272CEAF700A08F3B /* DataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67961CD8272CEAF700A08F3B /* DataLoader.swift */; };
+		67961CDB272F6BDA00A08F3B /* PaymentsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67961CDA272F6BDA00A08F3B /* PaymentsController.swift */; };
+		67961CDD272F72FE00A08F3B /* PaymentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67961CDC272F72FE00A08F3B /* PaymentCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		67961CBF272CB86900A08F3B /* TestForAEON.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestForAEON.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67961CC2272CB86900A08F3B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		67961CC4272CB86900A08F3B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		67961CC6272CB86900A08F3B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		67961CC6272CB86900A08F3B /* AuthorizationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationController.swift; sourceTree = "<group>"; };
 		67961CC9272CB86900A08F3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		67961CCB272CB86A00A08F3B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		67961CCE272CB86A00A08F3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		67961CD0272CB86A00A08F3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		67961CD6272CDF1A00A08F3B /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		67961CD8272CEAF700A08F3B /* DataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLoader.swift; sourceTree = "<group>"; };
+		67961CDA272F6BDA00A08F3B /* PaymentsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentsController.swift; sourceTree = "<group>"; };
+		67961CDC272F72FE00A08F3B /* PaymentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +66,12 @@
 			children = (
 				67961CC2272CB86900A08F3B /* AppDelegate.swift */,
 				67961CC4272CB86900A08F3B /* SceneDelegate.swift */,
-				67961CC6272CB86900A08F3B /* ViewController.swift */,
+				67961CC6272CB86900A08F3B /* AuthorizationController.swift */,
 				67961CC8272CB86900A08F3B /* Main.storyboard */,
+				67961CDA272F6BDA00A08F3B /* PaymentsController.swift */,
+				67961CDC272F72FE00A08F3B /* PaymentCell.swift */,
+				67961CD6272CDF1A00A08F3B /* Models.swift */,
+				67961CD8272CEAF700A08F3B /* DataLoader.swift */,
 				67961CCB272CB86A00A08F3B /* Assets.xcassets */,
 				67961CCD272CB86A00A08F3B /* LaunchScreen.storyboard */,
 				67961CD0272CB86A00A08F3B /* Info.plist */,
@@ -138,8 +150,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				67961CC7272CB86900A08F3B /* ViewController.swift in Sources */,
+				67961CD9272CEAF700A08F3B /* DataLoader.swift in Sources */,
+				67961CD7272CDF1A00A08F3B /* Models.swift in Sources */,
+				67961CC7272CB86900A08F3B /* AuthorizationController.swift in Sources */,
 				67961CC3272CB86900A08F3B /* AppDelegate.swift in Sources */,
+				67961CDD272F72FE00A08F3B /* PaymentCell.swift in Sources */,
+				67961CDB272F6BDA00A08F3B /* PaymentsController.swift in Sources */,
 				67961CC5272CB86900A08F3B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
