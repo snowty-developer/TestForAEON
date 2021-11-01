@@ -18,7 +18,7 @@ class AuthorizationController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        incorrectMessage.isHidden = true
+        incorrectMessage.alpha = 0
         
         let login = UserDefaults.standard.string(forKey: "login")
         let password = UserDefaults.standard.string(forKey: "password")
@@ -83,7 +83,7 @@ class AuthorizationController: UIViewController {
                         UserDefaults.standard.set(self.pass.text!, forKey: "password")
                         
                         sender.setTitle("My payments", for: .normal)
-                        self.incorrectMessage.isHidden = true
+                        self.incorrectMessage.alpha = 0
                         self.signOutButton.isHidden = false
                         
                         DataLoadingFunction().LoadPayments(token: tokenResult.response!.token) { (result) in
@@ -98,7 +98,11 @@ class AuthorizationController: UIViewController {
                         }
                         
                     }
-                    else { self.incorrectMessage.isHidden = false }
+                    else {
+                        UIView.animate(withDuration: 0.15) {
+                            self.incorrectMessage.alpha = 1
+                        }
+                    }
                 case .failure(let error):
                     print(error)
                 }
